@@ -1172,7 +1172,7 @@
                             "uuid": {
                               "children": {},
                               "dataType": "string",
-                              "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.uuid))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (crypto.randomUUID()))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
                               "fieldType": "Text Input",
                               "sourceData": "b0ce7203-ebb4-4f66-b07e-0d29ee0b4299",
                               "isCustomField": false,
