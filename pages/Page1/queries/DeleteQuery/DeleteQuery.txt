@@ -1,0 +1,2 @@
+DELETE FROM animals
+  WHERE uuid = {{data_table.triggeredRow.uuid}};

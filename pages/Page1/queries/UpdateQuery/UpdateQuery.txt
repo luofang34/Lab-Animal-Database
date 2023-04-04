@@ -1,0 +1,8 @@
+UPDATE animals SET
+		animal_strain = '{{update_form.fieldState.animal_strain.isVisible ? update_form.formData.animal_strain : update_form.sourceData.animal_strain}}',
+		animal_id = '{{update_form.fieldState.animal_id.isVisible ? update_form.formData.animal_id : update_form.sourceData.animal_id}}',
+    cage_id = '{{update_form.fieldState.cage_id.isVisible ? update_form.formData.cage_id : update_form.sourceData.cage_id}}',
+		cage_uuid = '{{update_form.fieldState.cage_uuid.isVisible ? update_form.formData.cage_uuid : update_form.sourceData.cage_uuid}}',
+		dob = '{{update_form.fieldState.dob.isVisible ? update_form.formData.dob : update_form.sourceData.dob}}',
+		sex = '{{update_form.fieldState.sex.isVisible ? update_form.formData.sex : update_form.sourceData.sex}}'
+WHERE uuid = {{data_table.selectedRow.uuid}};

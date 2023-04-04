@@ -1,0 +1,16 @@
+INSERT INTO animals (
+	uuid,
+	animal_strain,
+	animal_id,
+	cage_id,
+	cage_uuid,
+	dob,
+	sex)
+VALUES (
+	'{{insert_form.formData.uuid}}',
+	'{{insert_form.formData.animal_strain}}',
+	'{{insert_form.formData.animal_id}}',
+	'{{insert_form.formData.cage_id}}',
+	'{{insert_form.formData.cage_uuid}}',
+	'{{insert_form.formData.dob}}',
+	'{{insert_form.formData.sex}}');
